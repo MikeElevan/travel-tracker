@@ -157,8 +157,7 @@ export class PlacesApiService {
     if (cached) return of(cached);
     return fetchFn().pipe(
       tap({
-        next: (data) => this.cache.set(key, data, CACHE_TTL_MS),
-        error: () => { }
+        next: (data) => this.cache.set(key, data, CACHE_TTL_MS)
       })
     );
   }
