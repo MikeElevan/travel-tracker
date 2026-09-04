@@ -1,0 +1,18 @@
+{
+  "/foursquare-api": {
+    "target": "https://api.foursquare.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/foursquare-api": "/v3"
+    }
+  },
+  "/foursquare-autocomplete": {
+    "target": "https://places-api.foursquare.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/foursquare-autocomplete": ""
+    }
+  }
+}
